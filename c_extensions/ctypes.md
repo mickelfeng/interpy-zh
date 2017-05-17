@@ -29,6 +29,11 @@ float add_float(float num1, float num2){
 #For Linux
 $  gcc -shared -Wl,-soname,adder -o adder.so -fPIC add.c
 
+
+#for wind cygwin
+
+$  gcc -shared -Wl,-soname,adder -o adder.so  sample.c
+
 #For Mac
 $ gcc -shared -Wl,-install_name,adder.so -o adder.so -fPIC add.c
 
